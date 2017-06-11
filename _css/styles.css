@@ -1,0 +1,498 @@
+/* <link href="https://fonts.googleapis.com/css?family=Barrio|Patrick+Hand+SC|Righteous" rel="stylesheet">
+Specify in CSS
+
+Use the following CSS rules to specify these families:
+font-family: 'Patrick Hand SC', cursive;
+font-family: 'Barrio', cursive;
+font-family: 'Righteous', cursive;
+
+font-family: 'Lobster', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Monda', sans-serif;
+
+rebeccapurple
+#663399
+rgb(102,51,153)
+
+hotpink
+#FF69B4
+rgb(255,105,180)
+
+mintcream
+#F5FFFA
+rgb(245,255,250)
+
+powderblue
+#B0E0E6
+rgb(176,224,230)
+
+my color palette 
+#FAFAFA //250, 250, 250 snow words in footer and header
+#E3F2FD // 227, 242, 253 gilliter first section choice
+#EF233C red
+#DB5461  // 219, 84, 97 DARK TERRA COTTA links video back ground and we will see
+#686963 //104, 105, 99 GRANITE GRAY footer and header + image and we will test it first
+#8AA29E //138, 162, 158 CADET GREY last section choice
+*/
+/*
+general
+-----------------------------*/
+html {
+    margin-bottom: 0;
+  box-sizing: border-box;
+} 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family:  'Monda', sans-serif;
+}
+.width-content{
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 50px;
+    
+}
+h1{
+    color: white;
+    font-family: 'Shrikhand', cursive; 
+    font-size: 60px;
+    font-weight: 300;
+    margin: 0;
+    margin-top: 20px;
+}
+h2{
+    font-family: 'Gloria Hallelujah', serif;
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+}
+h3{
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #EF233C;
+    font-style: italic;
+}
+a:hover{
+    color: #FAFAFA;
+}
+.about, .menu, .order, .branches, .chefs{
+        background: #E3F2FD;
+}
+.about , .video , .certificates {
+ padding-top: 5%;
+}
+ .col-wide{
+    width: 58%;
+    float: left;
+}
+ .col-narrow{
+    width: 40%;
+    display: inline-block;
+}
+.btn{
+    font-weight: 600;
+    font-size: 20px;
+    color: #DB5461;
+    background: #FAFAFA;
+}
+.btn:hover{
+     color: #FAFAFA;
+    background: #DB5461;
+
+}
+/* nav pages 
+-----------------------*/
+nav{
+    background: #686963;
+    width: 100%;
+    position: fixed;
+    margin: 0;
+    z-index: 200;
+    text-align: center;
+}
+ul#pages, ul.sub1{
+    list-style-type: none;
+    background: #686963;
+}
+ul#pages li {
+    width: 125px;
+    position: relative;
+    margin-right: 5px;
+    margin-top: 5px;
+    display: inline-block;
+
+}
+Ul#pages a{
+    text-decoration: none;
+    display: block;
+    width: 125px;
+    height: 50px;
+    color: #FAFAFA;
+    text-align: center;
+    border-radius: 3px;
+}
+ul#pages li:hover>a{
+    color: #686963;
+    background: #E3F2FD;
+}
+ul#pages li:hover>a:hover{
+        background: #FAFAFA;
+
+}
+ul#pages ul.sub1 li{
+    margin: 0;
+    float: left;
+    margin-left: -40px;
+}
+.sub1{
+    z-index: 250;
+}
+ul#pages ul.sub1{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    
+}
+ul#pages li:hover .sub1{
+    display: block;
+}
+/*
+nav li{
+    border: 2px solid red;
+    list-style-type: none;
+    display: inline-block;
+    float:left; 
+    text-align: center;
+}
+.sub-pages li{
+    display: block;
+    float: none;
+    margin-right: 10px;
+}
+
+.pages li{
+    color: #FAFAFA;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 5px;
+    position: relative;
+    display: inline-block;
+}
+.pages ul li:hover{
+    color: #686963;
+    background: #FAFAFA;
+}
+.pages ul li .sub-pages il{
+    position: absolute;
+    display: block;
+    float: left;
+}
+.pages ul li:hover sub-pages li{
+    
+}*/
+
+
+/*header and footer
+-----------------------------*/
+
+
+/*header
+-----------------------------*/
+header{
+    padding-top: 50px;
+    background: linear-gradient(rgba(104, 105, 99, 1),rgba(104, 105, 99, 0.2)), url(../_images/footer1.jpg) no-repeat fixed;
+    background-size: cover;
+    color: #E3F2FD;
+}
+
+/*footer
+-----------------------------*/
+footer{
+    text-align: center;
+    background: linear-gradient(rgba(104, 105, 99, 0.2),rgba(104, 105, 99, 0.8)), url(../_images/footer1.jpg) no-repeat fixed;
+    background-size: cover;
+    color: #E3F2FD;
+}
+footer a{
+    margin-right: 8px;
+    font-size: 30px;
+}
+/*about us
+-----------------------------*/
+.about{
+/*    padding-top: 5%;*/
+}
+.about:after{
+    content: "";
+    clear: both;
+    display: table;
+    
+}
+
+.slider{
+    overflow: hidden;
+    width: 40%;
+    height: 200px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-right: 10%;
+/*    border-radius: 15px solid #DB5461;*/
+}
+.slider figure div{
+    width: 25%;
+    float: left;
+}
+.slider figure img{
+    width: 100%;
+    float: left;
+
+}
+.slider figure{
+    position: relative;
+    width: 400%;
+    margin: 0;
+    left: 0;
+    animation: 20s slidy infinite;
+}
+@keyframes slidy{
+    0%{
+        left: 0%;
+        }
+    20%{
+        left: 0%;
+        }
+    25%{
+        left: -100%;
+        }
+    45%{
+        left: -100%;
+        }
+    50%{
+        left: -200%;
+        }
+    70%{
+        left: -200%;
+        }
+    75%{
+        left: -300%;
+        }
+    95%{
+        left: -300%;
+        }
+}
+
+/*video
+-----------------------------*/
+.video{
+    background:#DB5461;
+    text-align: center;
+}
+
+
+/*certificates
+-----------------------------*/
+.certificates{
+    background: #8AA29E;
+}
+.certificates:after{
+    content: "";
+    clear: both;
+    display: table;
+}
+#certificates .slider{
+    height: 300px;
+}
+#certificates .col-narrow{
+    display: inline-block;
+    width: 50%;
+    float: left;
+    padding: 0 5% 5% 0;
+    
+}
+dt{
+    font-style: italic;
+    font-weight: 700;
+}
+/*table of menu
+-----------------------------*/
+.menu a:hover{
+    color: black;
+}
+table{
+    width: 100%;
+}
+table em{
+    font-weight: 700;
+    font-style: italic;
+        
+}
+table img{
+    width: 100%;
+    padding: 6px;
+    height: 123px;
+    border-radius: 50%;
+}
+table img:hover{
+    transform: scale(1.5);
+    border-radius: 30%;
+}
+.menu thead{
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    background: #8AA29E;
+    padding: 5px;    
+    font-size: 24px;
+}
+table td:nth-last-of-type(3){
+    text-align: left;
+    width: 45%;
+    padding-left: 5px;
+}
+table td:nth-last-of-type(2){
+    text-align: center;
+    width: 15%;
+    min-height: 125px; 
+    overflow: hidden;
+    
+}
+table td:nth-last-of-type(2):hover{
+    transform: scale(2);
+}
+table td:nth-last-of-type(1){
+    text-align: center;
+    width: 10%;
+}
+#breakfast, #lunch, #dinner, #salads, #drinks, #sweets{
+    text-align: center;
+    font-weight: 700;
+}
+#breakfast:hover, #lunch:hover, #dinner:hover, #salads:hover, #drinks:hover, #sweets:hover {
+        background: none;
+
+}
+.menu td{
+    border-radius: 6px;
+    background: none;
+/*    border: 1px solid #8AA29E;*/
+
+}
+.menu td:hover{
+    background: #DB5461;
+}
+
+
+/*order form 
+-----------------------------*/
+.order input, .order textarea {
+    display: block;
+    background: #FAFAFA;
+    margin-bottom: 15px;
+    font-family: 'Monda', sans-serif; 
+}
+.order .in1{
+    width: 50%;
+    height: 25px;
+}
+.in2{
+    width: 70%;
+    height: 50px;
+}
+.in3{
+    width: 70%;
+    height: 200px;
+}
+
+.order img{
+    width: 150%;
+    float: left;
+margin-left: -60px;    
+}
+.order img:hover{
+    margin-left: -120px;
+}
+.order h3{
+    text-align: center;
+}
+
+/*branches ifram 
+-----------------------------*/
+.branches:after{
+    content: "";
+    clear: both;
+    display: table;
+    
+}
+.block, iframe{
+    display: inline-block;
+    float: left;
+    width: 30%;
+    margin: 0% 3% 5% 0%;
+    border-radius: 10px;
+}
+
+/*chefs
+-----------------------------
+.chefs .col-narrow{
+    padding-left: 20px;
+    float: right;}*/
+.chefs:after{ 
+    content: "";
+    display: table;
+    clear: both;
+}
+.chefs img{
+    border-radius: 5px;
+    background:#DB5461;
+    width: 50%;
+    height: 180px;
+}
+.chefs img:hover{
+    background: #8AA29E;
+}
+.chef .col-wide{
+            width: 70%;
+            float:left;
+            padding-left: 20px;
+            min-height: 195px;
+}
+.chef .col-narrow{
+            width: 30%;
+            float: left;
+            clear: left; 
+            margin-top: 0;
+
+}
+.ch{
+                min-height: 195px;
+
+}
+.ch h2, .ch p{
+    margin: 0;
+
+}
+
+/*.ch p:last-of-type{
+    margin-bottom: 35px;
+}
+.ch{
+    border-left: 1px solid #DB5461;
+    margin-bottom: 25%;
+    padding-left: 12%;
+}
+
+/*mediaqueries
+-----------------------------*/
+
+
+
